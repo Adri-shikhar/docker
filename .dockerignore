@@ -1,0 +1,11 @@
+# Files that should never be copied into the image.
+# node_modules and .next are rebuilt inside the container, and copying
+# your local ones in would be slow and could break the build.
+node_modules
+.next
+.git
+.gitignore
+dockerfile
+.dockerignore
+npm-debug.log*
+.env*.local
